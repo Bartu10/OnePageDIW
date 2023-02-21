@@ -1,0 +1,23 @@
+{
+  "name": "onepagediw",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Bartu10/OnePageDIW.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Bartu10/OnePageDIW/issues"
+  },
+  "homepage": "https://github.com/Bartu10/OnePageDIW#readme",
+  "devDependencies": {
+    "sass": "^1.58.3"
+  }
+}
