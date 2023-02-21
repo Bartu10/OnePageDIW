@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/Bartu10/OnePageDIW#readme",
   "devDependencies": {
+    "@parcel/transformer-sass": "^2.8.0",
     "sass": "^1.58.3"
   }
 }
