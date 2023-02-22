@@ -136,7 +136,7 @@ punto.forEach(function (cadaPunto, i) {
     // Guardar la posición de ese PUNTO
     var posicion = i;
     // Calculando el espacio que debe DESPLAZARSE el GRANDE
-    var operacion = posicion * -33;
+    var operacion = posicion * -25;
 
     // MOVEMOS el grand
     grande.style.transform = "translateX(".concat(operacion, "%)");
@@ -150,12 +150,6 @@ punto.forEach(function (cadaPunto, i) {
     punto[i].classList.add('activo');
   });
 })(condicion) ? 'hola' : 'adiós';
-var flipCards = document.querySelectorAll('.flip-card');
-flipCards.forEach(function (flipCard) {
-  flipCard.addEventListener('click', function () {
-    flipCard.querySelector('.flip-card-inner').classList.toggle('flipped');
-  });
-});
 },{}],"../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
@@ -181,7 +175,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "60758" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "62657" + '/');
   ws.onmessage = function (event) {
     checkedAssets = {};
     assetsToAccept = [];
