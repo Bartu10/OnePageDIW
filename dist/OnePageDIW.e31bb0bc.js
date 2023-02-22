@@ -118,7 +118,44 @@ parcelRequire = (function (modules, cache, entry, globalName) {
 
   return newRequire;
 })({"index.js":[function(require,module,exports) {
+'use strict';
 
+var grande = document.querySelector('.grande');
+var punto = document.querySelectorAll('.punto');
+
+// Cuando CLICK en punto
+// Saber la posición de ese punto
+// Aplicar un transform translateX al grande
+// QUITAR la clase activo de TODOS puntos
+// AÑADIR la clase activo al punto que hemos hecho CLICK
+
+// Recorrer TODOS los punto
+punto.forEach(function (cadaPunto, i) {
+  // Asignamos un CLICK a cadaPunto
+  punto[i].addEventListener('click', function () {
+    // Guardar la posición de ese PUNTO
+    var posicion = i;
+    // Calculando el espacio que debe DESPLAZARSE el GRANDE
+    var operacion = posicion * -33;
+
+    // MOVEMOS el grand
+    grande.style.transform = "translateX(".concat(operacion, "%)");
+
+    // Recorremos TODOS los punto
+    punto.forEach(function (cadaPunto, i) {
+      // Quitamos la clase ACTIVO a TODOS los punto
+      punto[i].classList.remove('activo');
+    });
+    // Añadir la clase activo en el punto que hemos hecho CLICK
+    punto[i].classList.add('activo');
+  });
+})(condicion) ? 'hola' : 'adiós';
+var flipCards = document.querySelectorAll('.flip-card');
+flipCards.forEach(function (flipCard) {
+  flipCard.addEventListener('click', function () {
+    flipCard.querySelector('.flip-card-inner').classList.toggle('flipped');
+  });
+});
 },{}],"../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
@@ -144,7 +181,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "59263" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "62527" + '/');
   ws.onmessage = function (event) {
     checkedAssets = {};
     assetsToAccept = [];

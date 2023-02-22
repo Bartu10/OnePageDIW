@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Menú Responsive</title>
     <link rel="stylesheet" href="index.scss">
+    <script defer src="index.js"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
 </head>
 <body>
@@ -25,6 +26,37 @@
             <li><a href="#">Contacto</a></li>
         </ul>
     </nav>
-    <section></section>
+
+    <section class="carrouselSection">
+        <div class="carrousel">
+            <div class="grande">
+                <img src="assets/Background1.png" alt="Imagen 1" class="img">
+                <img src="assets/Background4.jpg" alt="Imagen 2" class="img">
+                <img src="assets/Background3.png" alt="Imagen 3" class="img">
+            </div>
+    
+            <ul class="puntos">
+                <li class="punto activo"></li>
+                <li class="punto"></li>
+                <li class="punto"></li>
+            </ul>
+        </div>
+    </section>
+
+
+<section class="cardsFlipper">
+    <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <h2>Front Content</h2>
+            <p>This is the front of the flip card.</p>
+          </div>
+          <div class="flip-card-back">
+            <h2>Back Content</h2>
+            <p>This is the back of the flip card.</p>
+          </div>
+        </div>
+      </div>
+</section>
 </body>
 </html>
