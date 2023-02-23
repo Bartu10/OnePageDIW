@@ -1,7 +1,13 @@
+@font-face {
+  font-family: Sikat;
+  src: url("Sikat-8MrrB.d9da392f.ttf") format("truetype");
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  font-family: Sikat;
   text-decoration: none;
   list-style: none;
 }
@@ -36,7 +42,7 @@ nav ul li {
 }
 
 nav ul li a {
-  color: #fff;
+  color: #000;
   text-transform: uppercase;
   border-radius: 3px;
   padding: 7px 13px;
@@ -44,7 +50,7 @@ nav ul li a {
 }
 
 li a.active, li a:hover {
-  background: #000090;
+  background: #ff9354;
   transition: all .5s;
 }
 
@@ -70,6 +76,7 @@ section {
 
 @media (max-width: 952px) {
   .enlace {
+    z-index: 2;
     padding-left: 20px;
   }
 
@@ -109,13 +116,227 @@ section {
   }
 
   li a:hover, li a.active {
-    color: red;
+    color: #fff;
     background: none;
   }
 
   #check:checked ~ ul {
+    z-index: 1;
     left: 0;
   }
+}
+
+.carrouselSection :root {
+  --negro: #393939;
+  --blanco: #ececec;
+  --sombra-ppal: #c9c9c9;
+  --sombra-sec: #fff;
+  --borde-negro: #00000050;
+  --marcado: #7fc3ff;
+  --tipo-principal: Helvetica, Arial, sans-serif;
+}
+
+.carrouselSection img {
+  max-width: 100%;
+  width: 80%;
+  object-fit: cover;
+  object-position: center center;
+  display: block;
+}
+
+.carrouselSection a {
+  color: inherit;
+  font-size: inherit;
+  text-decoration: none;
+  display: block;
+}
+
+.carrouselSection video {
+  max-width: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center center;
+  display: block;
+}
+
+.carrouselSection p a {
+  display: inline;
+}
+
+.carrouselSection li {
+  list-style-type: none;
+}
+
+.carrouselSection table, .carrouselSection tr, .carrouselSection td {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.carrouselSection html {
+  scroll-behavior: smooth;
+}
+
+.carrouselSection h1, .carrouselSection h2, .carrouselSection h3, .carrouselSection h4, .carrouselSection h5, .carrouselSection h6, .carrouselSection strong {
+  -webkit-hyphens: auto;
+  hyphens: auto;
+  font-weight: inherit;
+  font-size: inherit;
+}
+
+.carrouselSection ::selection {
+  background-color: var(--negro);
+  color: var(--blanco);
+}
+
+.carrouselSection form, .carrouselSection input, .carrouselSection textarea, .carrouselSection select, .carrouselSection button {
+  font-family: inherit;
+  font-size: inherit;
+  -webkit-hyphens: auto;
+  hyphens: auto;
+  background-color: #0000;
+  display: block;
+}
+
+.carrouselSection body {
+  font-family: var(--tipo-principal);
+  min-height: 100vh;
+  background-color: var(--blanco);
+  color: var(--negro);
+  -webkit-hyphens: auto;
+  hyphens: auto;
+  font-smooth: always;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  flex-flow: row;
+  justify-content: center;
+  align-items: center;
+  font-size: 100%;
+  line-height: 1.4em;
+  display: flex;
+}
+
+.carrouselSection .carrousel {
+  width: 90%;
+  max-width: 120em;
+  color: var(--negro);
+  background-color: var(--blanco);
+  box-shadow: 1em 1em 2em var(--sombra-ppal), -1em -1em 2em var(--sombra-sec), inset 0 0 0 transparent, inset 0 0 0 transparent;
+  border-radius: 1em;
+  padding: 2em;
+  transition: all .4s;
+  overflow: hidden;
+}
+
+.carrouselSection .carrousel .grande {
+  width: 400%;
+  color: var(--negro);
+  background-color: var(--blanco);
+  box-shadow: 1em 1em 2em var(--sombra-ppal), -1em -1em 2em var(--sombra-sec), inset 0 0 0 transparent, inset 0 0 0 transparent;
+  border-radius: 1em;
+  flex-flow: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2em;
+  transition: all .5s;
+  display: flex;
+  transform: translateX(0%);
+}
+
+.carrouselSection .carrousel .img {
+  width: calc(25% - 2em);
+  min-height: 10vh;
+  color: var(--negro);
+  background-color: var(--blanco);
+  box-shadow: 1em 1em 2em var(--sombra-ppal), -1em -1em 2em var(--sombra-sec), inset 0 0 0 transparent, inset 0 0 0 transparent;
+  border-radius: 1em;
+  transition: all .4s;
+}
+
+.carrouselSection .carrousel .puntos {
+  width: 100%;
+  flex-flow: row;
+  justify-content: center;
+  align-items: center;
+  margin: 1em 0 0;
+  padding: .4em;
+  display: flex;
+}
+
+.carrouselSection .carrousel .punto {
+  text-align: center;
+  width: 2em;
+  height: 2em;
+  box-shadow: .6em .6em 1.2em var(--sombra-ppal), -.6em -.6em 1.2em var(--sombra-sec), inset 0 0 0 transparent, inset 0 0 0 transparent;
+  background-color: gray;
+  border-radius: 1em;
+  margin: 1em 1em 0;
+  transition: all .4s;
+}
+
+.carrouselSection .carrousel .punto.activo {
+  background-color: #000;
+}
+
+.Jugadores {
+  background-color: #add8e6;
+  padding-top: 20%;
+}
+
+.flip-card {
+  width: 20%;
+  height: 30vh;
+  perspective: 1000px;
+}
+
+.flip-card-inner {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transform-style: preserve-3d;
+  transition: transform .6s;
+  position: relative;
+}
+
+.flip-card.flipped .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  background-color: #ff9354;
+  position: absolute;
+}
+
+.flip-card-back {
+  transform: rotateY(180deg);
+}
+
+.cartas {
+  justify-content: space-evenly;
+  display: flex;
+}
+
+.player {
+  height: 70%;
+  width: 75%;
+}
+
+.Lore {
+  padding-top: 3%;
+  font-size: large;
+}
+
+.Habilidades {
+  text-align: left;
+  padding-top: 4%;
+  padding-left: 2%;
+}
+
+.Habilidades dt {
+  font-size: large;
+  font-weight: 600;
 }
 
 /*# sourceMappingURL=index.ac93e151.css.map */
