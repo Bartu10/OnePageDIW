@@ -149,7 +149,13 @@ punto.forEach(function (cadaPunto, i) {
     // Añadir la clase activo en el punto que hemos hecho CLICK
     punto[i].classList.add('activo');
   });
-})(condicion) ? 'hola' : 'adiós';
+});
+var flipCards = document.querySelectorAll('.flip-card');
+flipCards.forEach(function (flipCard) {
+  flipCard.addEventListener('click', function () {
+    this.classList.toggle('flipped');
+  });
+});
 },{}],"../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
@@ -175,7 +181,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "62657" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "58457" + '/');
   ws.onmessage = function (event) {
     checkedAssets = {};
     assetsToAccept = [];
