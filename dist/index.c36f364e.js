@@ -31,5 +31,16 @@ flipCards.forEach(function(flipCard) {
         this.classList.toggle("flipped");
     });
 });
+var myVideo = document.getElementById("vid");
+function playPause() {
+    if (myVideo.paused) myVideo.play();
+    else myVideo.pause();
+}
+function fiveplus() {
+    myVideo.currentTime += 5;
+}
+function fiveless() {
+    myVideo.currentTime -= 5;
+}
 
 //# sourceMappingURL=index.c36f364e.js.map

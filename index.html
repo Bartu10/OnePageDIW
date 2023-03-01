@@ -20,14 +20,15 @@
         </a>
         <ul>
             <li><a class="active" href="#">Inicio</a></li>
-            <li><a href="#">Nosotros</a></li>
-            <li><a href="#">Servicios</a></li>
-            <li><a href="#">Portafolio</a></li>
+            <li><a href="http://localhost:1234#carusel">Carusel</a></li>
+            <li><a href="http://localhost:1234#personajes">Personajes</a></li>
+            <li><a href="#">Videos</a></li>
             <li><a href="#">Contacto</a></li>
         </ul>
     </nav>
 
-    <section class="carrouselSection">
+    <section class="carrouselSection" id="carusel">
+      <h2 class="title">BACKGROUNDS</h2>   
         <div class="carrousel">
             <div class="grande">
                 <img src="assets/Background1.png" alt="Imagen 1" class="img">
@@ -45,7 +46,7 @@
         </div>
     </section>
 
-    <section class="Jugadores">
+    <section class="Jugadores" id="personajes">
       <h2 class="title">PERSONAJES</h2>       
         <div class="cartas">
         <div class="flip-card">
@@ -112,7 +113,35 @@
             </div>
           </div>
         </div>
+        <div class="audio">
+        <audio controls>
+          <source src="./assets/Scontri hooligans Gothenburg vs Helsingborg + Copenhagen.mp3">
+        Your browser does not support the audio element.
+        </audio>
+        <audio controls>
+          <source src="./assets/Scontri hooligans Gothenburg vs Helsingborg + Copenhagen.mp3">
+        Your browser does not support the audio element.
+        </audio>
+        <audio controls>
+          <source src="./assets/sonido_13 Letter from an old Friend.mp3">
+        Your browser does not support the audio element.
+        </audio>
+      </div>
     </section>
+
+    <section class="video" id="video">
+      <h2 class="title">VIDEO</h2>
+      <div class="videoAss">
+      <video muted id="vid" src="./assets/Juego Clasico Final Fight   Descarga x Mega (sin acortadores).mp4"></video>
+    </div>
+    <div class="buttons">
+    <a class="pause" onclick="fiveless()">- 5seg</a>
+    <a class="pause" onclick="playPause()">Play/Pause</a>
+    <a class="pause" onclick="fiveplus()">+ 5seg</a>
+  </div> 
+</div> 
+  </section>
+    
 
 
 

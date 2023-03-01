@@ -174,7 +174,7 @@ h1, h2, h3, h4, h5, h6, strong {
   -webkit-hyphens: auto;
           hyphens: auto;
   font-weight: inherit;
-  font-size: inherit;
+
 }
 
 ::selection {
@@ -274,10 +274,20 @@ body {
 }
 }
 
+.title{
+  text-align: center;
+  padding-top: 5%;
+  font-size: 4rem;
+  color: #5333ed;
+
+ 
+}
+
   .Jugadores{
     font-size: 1rem;
-    margin-top: 15%;
+    margin-top: 30%;
     background-color: #5333ed;
+
 
     .title{
       text-align: center;
@@ -285,7 +295,6 @@ body {
       padding-bottom: 5%;
       font-size: 4rem;
       color: #ffffff;
-
     }
 
     h2{
@@ -387,4 +396,51 @@ body {
       font-size: 1.2rem;
       font-weight: 600;
   }
+  }
+
+  .audio{
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 2%;
+
+    audio{
+      width: 21%;
+    }
+  }
+
+  .videoAss{
+    padding-top:10%;
+    text-align: center;
+    video{
+      border-radius: 5%;
+    }
+  }
+
+
+.pause{
+    
+    margin: 1%;
+    width: 10%;
+    background-color: #5333ed;
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    padding: 20px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  
+    &:hover {
+      background-color: darken(#5333ed, 10%);
+    }
+  
+    &:active {
+      background-color: darken(#5333ed, 20%);
+    }
+  }
+
+
+  .buttons{
+    display: flex;
+    justify-content: center;
   }

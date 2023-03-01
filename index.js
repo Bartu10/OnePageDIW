@@ -45,3 +45,20 @@ flipCards.forEach(function(flipCard) {
 
 
 
+var myVideo = document.getElementById("vid"); 
+
+function playPause() { 
+  if (myVideo.paused) 
+    myVideo.play(); 
+  else 
+    myVideo.pause(); 
+} 
+
+function fiveplus(){
+  myVideo.currentTime += 5;
+}
+
+function fiveless(){
+    myVideo.currentTime -= 5;
+  }
+
