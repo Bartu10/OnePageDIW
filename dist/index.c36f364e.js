@@ -1,4 +1,3 @@
-"use strict";
 const grande = document.querySelector(".grande");
 const punto = document.querySelectorAll(".punto");
 // Cuando CLICK en punto
@@ -32,6 +31,7 @@ flipCards.forEach(function(flipCard) {
     });
 });
 var myVideo = document.getElementById("vid");
+console.log(myVideo);
 function playPause() {
     if (myVideo.paused) myVideo.play();
     else myVideo.pause();
