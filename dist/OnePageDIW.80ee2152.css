@@ -167,7 +167,6 @@ section {
   -webkit-hyphens: auto;
   hyphens: auto;
   font-weight: inherit;
-  font-size: inherit;
 }
 .carrouselSection ::selection {
   background-color: var(--negro);
@@ -257,9 +256,16 @@ section {
   background-color: black;
 }
 
+.title {
+  text-align: center;
+  padding-top: 5%;
+  font-size: 4rem;
+  color: #5333ed;
+}
+
 .Jugadores {
   font-size: 1rem;
-  margin-top: 15%;
+  margin-top: 30%;
   background-color: #5333ed;
 }
 .Jugadores .title {
@@ -352,6 +358,7 @@ section {
   text-align: left;
   padding-top: 1%;
   padding-left: 10%;
+  padding-right: 10%;
 }
 .Habilidades h2 {
   padding-top: 2%;
@@ -363,6 +370,47 @@ section {
 .Habilidades dt {
   font-size: 1.2rem;
   font-weight: 600;
+}
+
+.audio {
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 2%;
+}
+.audio audio {
+  width: 21%;
+}
+
+.videoAss {
+  padding-top: 10%;
+  text-align: center;
+}
+.videoAss video {
+  border-radius: 5%;
+}
+
+.pause {
+  margin: 1%;
+  width: 10%;
+  background-color: #5333ed;
+  color: #fff;
+  border: none;
+  border-radius: 20px;
+  padding: 20px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.pause:hover {
+  background-color: #3513da;
+}
+.pause:active {
+  background-color: #2a0fab;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
 }
 
 /*# sourceMappingURL=/OnePageDIW.80ee2152.css.map */

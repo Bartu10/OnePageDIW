@@ -1,4 +1,4 @@
-'use strict'
+
 
 const grande    = document.querySelector('.grande')
 const punto     = document.querySelectorAll('.punto')
@@ -45,8 +45,8 @@ flipCards.forEach(function(flipCard) {
 
 
 
-var myVideo = document.getElementById("vid"); 
-
+var myVideo = document.getElementById("vid");
+console.log(myVideo)
 function playPause() { 
   if (myVideo.paused) 
     myVideo.play(); 
@@ -59,6 +59,6 @@ function fiveplus(){
 }
 
 function fiveless(){
-    myVideo.currentTime -= 5;
-  }
+  myVideo.currentTime -= 5;
+}
 
