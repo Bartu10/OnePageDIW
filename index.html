@@ -19,11 +19,9 @@
             <img src="./assets/logoFondonegro.png" alt="" class="logo">
         </a>
         <ul class="navbar">
-            <li><a class="active" href="#">Inicio</a></li>
             <li><a href="http://localhost:1234#carusel">Carusel</a></li>
             <li><a href="http://localhost:1234#personajes">Personajes</a></li>
-            <li><a href="#">Videos</a></li>
-            <li><a href="#">Contacto</a></li>
+            <li><a href="http://localhost:1234#video">Videos</a></li>
         </ul>
     </nav>
 
@@ -97,7 +95,7 @@
             </div>
             <audio controls>
               <source src="./assets/Scontri hooligans Gothenburg vs Helsingborg + Copenhagen.mp3">
-            Your browser does not support the audio element.
+              Your browser does not support the audio element.
             </audio>
           </div>
           <div class="flip-card">
@@ -131,7 +129,10 @@
     <section class="video" id="video">
       <h2 class="title">VIDEO</h2>
       <div class="videoAss">
-      <video muted id="vid" src="./assets/Juego Clasico Final Fight   Descarga x Mega (sin acortadores).mp4"></video>
+      <video muted id="vid">
+        <source src="./assets/Juego Clasico Final Fight   Descarga x Mega (sin acortadores).mp4">
+        <source src="./assets/Juego-Clasico-Final-Fight-Descarga-x-Mega-_sin-acortadores_.webm">
+      </video>
     </div>
     <div class="buttons">
     <a class="pause" onclick="fiveless()">- 5seg</a>
@@ -141,8 +142,5 @@
 </div> 
   </section>
     
-
-
-
 </body>
 </html>
