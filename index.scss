@@ -357,6 +357,7 @@ body {
   .cartas{
     display: flex;
     justify-content: space-evenly;
+
   }
 
   .craig{
@@ -403,15 +404,11 @@ body {
   }
   }
 
-  .audio{
-    display: flex;
-    justify-content: space-evenly;
-    padding-top: 2%;
-
     audio{
-      width: 21%;
+      margin-top:14% ;
+      width: 100%;
     }
-  }
+
 
   .videoAss{
     padding-top:10%;
@@ -454,15 +451,61 @@ body {
     .pause{
       width: 20%;
     }
+    .Jugadores{
+      height: 220vh;
+    }
+    .cartas{
+      flex-direction: column;
+      align-items: center;
+      padding: 2rem;
+      div{
+        margin-top: 12%;
+        width: 100%;
+      }
+    }
+
+    .flip-card-back{
+      font-size: 0.75rem;
+    }
+
   }
   @media (max-width: 750px) {
     .carrouselSection{
       height: 70%;
     }
+    .Jugadores{
+      .title{
+        font-size: 2.5rem;
+      }
+      h2{
+        font-size: 1rem;
+      }
+    }
+
+    .Habilidades{
+      h2{
+        font-size: 0.80rem;
+      }
+      dt{
+      font-size: 0.80rem;
+      }
+      dd{
+        font-size: 0.70
+      }
+    }
+
+    .Lore{
+      font-size: 1rem;
+      
+    }
+    .title{
+      font-size: 2.5rem;
+    }
   }
   @media (max-width: 550px) {
     .pause{
-      font-size: 0.80rem;
+      font-size: 0.50rem;
     }
+
   }
   
