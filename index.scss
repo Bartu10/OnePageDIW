@@ -14,9 +14,14 @@
 }
 
 nav{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
   background: #5333ed;
   height: 80px;
   width: 100%;
+  z-index: 2;
 }
 .enlace{
   position: absolute;
@@ -65,6 +70,8 @@ section{
   background-position: center center;
   height: calc(100vh - 80px);
 }
+
+
 
 @media (max-width: 952px){
   .enlace{
@@ -263,6 +270,7 @@ body {
 }
 
 .carrousel .punto {
+  cursor: pointer;
   text-align: center;
   width: 2em;
   height: 2em;
@@ -319,7 +327,7 @@ body {
   .flip-card {
     width: 21%;
     height: 40vh;
-    perspective: 1000px;
+    cursor: pointer;
   }
   
   .flip-card-inner {
@@ -369,7 +377,7 @@ body {
   .moradd{
     margin-top: 2.5em;
     padding: 0.5rem;
-    width: 40%;
+    width: 150px;
     
   }
 
@@ -405,8 +413,9 @@ body {
   }
 
     audio{
-      margin-top:14% ;
+      margin-top:7% ;
       width: 100%;
+      z-index: 1;
     }
 
 
@@ -421,7 +430,6 @@ body {
 
 
 .pause{
-    
     margin: 1%;
     width: 10%;
     background-color: #5333ed;
@@ -447,33 +455,71 @@ body {
     display: flex;
     justify-content: center;
   }
+  @media (max-width: 1650px) {
+
+    .titlelore{
+      font-size: 1.2rem;
+    }
+    .Lore{
+      font-size: 1rem;
+    }
+    .Habilidades{
+      h2{
+      font-size: 1.2rem;
+    }
+
+    dt{
+      font-size: 1rem;
+    }
+    }
+  }
+
+
   @media (max-width: 1100px) {
     .pause{
       width: 20%;
     }
     .Jugadores{
-      height: 220vh;
+      height: 280vh;
     }
     .cartas{
+      margin-top: -200px;
       flex-direction: column;
       align-items: center;
-      padding: 2rem;
+      padding: 4rem;
       div{
-        margin-top: 12%;
+        margin-top: 19%;
         width: 100%;
+        margin-bottom: 16%;
       }
     }
 
     .flip-card-back{
       font-size: 0.75rem;
     }
+    .moradd{
+      height: 200px;
+    }
+
+    .craig{
+      width: 200px;
+    }
+  }
+
+  @media (max-width: 900px){
+    .Jugadores{
+      height: 250vh;
+    }
 
   }
+  
   @media (max-width: 750px) {
+
     .carrouselSection{
       height: 70%;
     }
     .Jugadores{
+      
       .title{
         font-size: 2.5rem;
       }
@@ -484,13 +530,13 @@ body {
 
     .Habilidades{
       h2{
-        font-size: 0.80rem;
+        font-size: 1rem;
       }
       dt{
       font-size: 0.80rem;
       }
       dd{
-        font-size: 0.70
+        font-size: 0.70rem
       }
     }
 
@@ -502,10 +548,33 @@ body {
       font-size: 2.5rem;
     }
   }
+@media (max-width: 650px){
+  .Jugadores{
+    height: 225vh;
+  }
+}
+
   @media (max-width: 550px) {
+    .cartas{
+      margin-top: -100px;
+    }
     .pause{
       font-size: 0.50rem;
     }
 
+    .Jugadores{
+      height: 200vh;
+    }
+
+  }
+
+  @media (max-width: 400px){
+    .Jugadores{
+      height: 180vh;
+    }
+
+    .video{
+      height: 60vh;
+    }
   }
   
