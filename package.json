@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start":"parcel index.html",
+    "start": "parcel index.html",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -20,7 +20,7 @@
   "homepage": "https://github.com/Bartu10/OnePageDIW#readme",
   "devDependencies": {
     "@parcel/transformer-sass": "^2.8.0",
-    "sass": "^1.58.3",
-    "parcel" : "latest"
+    "parcel": "latest",
+    "sass": "^1.58.3"
   }
 }
